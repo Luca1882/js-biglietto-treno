@@ -1,7 +1,10 @@
 //Richiesta tramite 'Prompt informazioni Km età passeggero'
 
-let utenteKm = prompt('Inserisci i km da fare');
+let utenteKm = prompt('Inserisci i km da fare'); //Prompt restituisce una stringa
 let eta = prompt('Inserisci la tua età');
+
+utenteKm = parseFloat(utenteKm);//Conversione in numero decimale
+eta = parseInt(eta); //Conversione a numero intero
 
 const prezzoBiglietto = 0.21; //Prezzo per km
 
