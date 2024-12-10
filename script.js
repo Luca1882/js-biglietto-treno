@@ -19,5 +19,6 @@ if (eta < 18) {
 
 let prezzoFinale = prezzoBase * (1 - sconto); 
 prezzoFinale = prezzoFinale.toFixed(2); //Arrotondo a due decimali
+prezzoFinale = prezzoFinale.replace(".",",");
 
 console.log(`Il prezzo finale è: €${prezzoFinale}`);
